@@ -1,10 +1,11 @@
 @import url('icons/flaticon.css');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body {
-    font-family: 'Geomanist';
+    font-family: 'Ubuntu', sans-serif;
     text-rendering: optimizeLegibility;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.05em;
-    color: #111;
+    color: #212121;
     font-size: 16px;
     line-height: 18px;
     overflow: hidden;
@@ -12,15 +13,15 @@ body {
 }
 
 p {
-    color: #111;
+    color: #212121;
     font-weight: 400;
     font-size: 21px;
     line-height: 24px;
     margin-bottom: 13px;
 }
 
-section {
-    padding: 50px 0;
+.container-fluid {
+    max-width: 1700px;
 }
 
 ::-webkit-scrollbar {
@@ -40,8 +41,35 @@ section {
 
 .logo img {
     display: block;
-    height: 50px;
+    height: 37px;
     width: auto;
+}
+
+.btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+    border: 2px solid transparent;
+    transition: all .2s linear;
+    padding: 15px 20px;
+}
+
+.btn span {
+    margin-left: 10px;
+}
+
+.btn-type-01 {
+    color: #00FFFF;
+    border-color: #00FFFF;
+}
+
+.btn-type-01:hover {
+    background-color: #00FFFF;
+    color: #000121;
 }
 
 
@@ -50,6 +78,16 @@ section {
 
 /******HEADER******/
 
+header {
+    padding: 25px 0;
+    background: linear-gradient(180deg, rgba(1, 2, 31, 0.9) 0%, rgba(1, 2, 31, 0) 100%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
 .nav-item {
     margin-left: 10px;
 }
@@ -57,202 +95,219 @@ section {
 .nav-link,
 .dropdown-toggle,
 .dropdown-item {
-    letter-spacing: .5px;
-    line-height: 16px;
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     transition: all .2s linear;
-    color: #111!important;
-    border: none;
-    background-color: inherit;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+    color: #FFFFFF!important;
+}
+
+.nav-link:hover,
+.dropdown-toggle:hover,
+.dropdown-item:hover {
+    color: #00FFFF!important;
 }
 
 .dropdown-toggle::after {
     transition: all .2s linear;
-    color: #111;
-    text-shadow: 0px 1px #111;
+}
+
+.dropdown-toggle:hover::after {
+    color: #00FFFF!important;
+}
+
+.dropdown-item {
+    color: #212121!important;
+}
+
+.nav-item {
+    margin: 0px 30px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.dropdown-toggle::after {
+    transition: all .2s linear;
+    color: #FFFFFF;
+    text-shadow: 0px 1px #FFFFFF;
     font-weight: 900;
     font-size: 14px;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+.dropdown-item {
+    padding: 5px;
+    background-color: transparent!important;
+}
+
+.dropdown-menu ul {
+    padding: 10px;
 }
 
 
 /******HEADER******/
 
 
-/******BOTÃO WTTS FOOTER******/
+/******Banner******/
 
-.input-hide {
-    display: none;
-}
-
-.btn-item {
-    cursor: pointer;
-}
-
-.btns-whatsapp {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    border: 5px solid #fff;
-    transition: all .2s linear;
+.banner {
+    position: relative;
+    padding: 150px 0 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
-    max-width: 100%;
-    box-shadow: -1px -1px 23px 0px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: -1px -1px 23px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: -1px -1px 23px 0px rgba(0, 0, 0, 0.2);
-    width: 365px;
-    max-height: 335px;
-    overflow: hidden;
-    overflow-y: auto;
-    position: fixed;
-    right: 20px;
-    bottom: 95px;
-    z-index: 9999;
-    transform: translateX(110%);
+    background-image: url(img/banner.png);
+    background-color: #00023A;
 }
 
-.whatsapp-item a {
-    padding: 15px 20px;
-    display: flex;
-    justify-content: flex-start;
-    font-family: 'Noto Sans', sans-serif;
+.banner>.row {
+    position: relative;
+    z-index: 55;
+}
+
+.banner-conteudo h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.banner-conteudo p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 40px 0;
+}
+
+.banner-conteudo {
+    max-width: 90%;
+}
+
+.services-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+    margin: 0 0 0 auto;
+    border: .5px solid #4305949e;
+}
+
+.banner .row {
     align-items: center;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    color: #333;
-    transition: all .3s linear;
 }
 
-.whatsapp-item a:hover {
-    background-color: #64b161;
-    color: #fff;
-}
-
-.whatsapp-item span img,
-.whatsapp-item span {
+.services-group a>figure img {
     display: block;
-    height: 35px;
-    width: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: all .2s linear;
 }
 
-.whatsapp-item span {
-    margin-right: 15px;
+.services-group a:hover>figure img {
+    opacity: 1;
 }
 
-.wq-open-close-btn {
+.services-group a {
     display: flex;
-    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.services-group a figure {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.services-group a figure::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: .5px solid #4305949e;
+    position: absolute;
+    transition: all .2s linear;
+    left: 0;
+    top: 0;
+}
+
+.services-group a:hover figure::before {
+    border-color: transparent;
+}
+
+.service-item {
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 333;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: flex-end;
-    flex-direction: column;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 9999;
+    justify-content: flex-start;
+}
+
+.service-item p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 0;
+    transition: all .2s linear;
+}
+
+.services-group a:hover .service-item p {
+    margin-bottom: 15px;
+}
+
+.service-item em {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+    color: #00FFFF;
+    transition: all .2s linear;
+    opacity: 0;
+    margin-bottom: -30px;
+}
+
+.services-group a:hover .service-item em {
+    opacity: 1;
     margin-bottom: 0;
 }
 
-.btn-item img {
-    display: block;
-    height: 60px;
+.service-item em span {
+    margin-left: 10px;
+}
+
+.service-item div>img {
+    height: 23px;
     width: auto;
-}
-
-.whatsapp-multiples-btn input[type=checkbox]:checked~ul {
-    transform: translateX(0%);
-}
-
-.whatsapp-item {
-    width: 357px;
-    max-width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-    .btns-whatsapp {
-        width: calc(100% - 20px);
-        right: 10px;
-        bottom: 70px;
-    }
-    .whatsapp-item a {
-        font-size: 20px;
-    }
-    .btn-item img {
-        height: 40px;
-    }
-    .wq-open-close-btn {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-        position: fixed;
-        right: 10px;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width: 577px) {
-    .btns-whatsapp {
-        right: 10px;
-        bottom: 70px;
-    }
-    .whatsapp-item a {
-        font-size: 20px;
-    }
-    .btn-item img {
-        height: 40px;
-    }
-    .wq-open-close-btn {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-        position: fixed;
-        right: 10px;
-    }
+    margin-bottom: 10px;
 }
 
 
-/******BOTÃO WTTS FOOTER******/
-
-
-/***** Pagination *****/
-
-.pagination-sec {
-    padding: 10px 0 50px;
-}
-
-.pagination {
-    justify-content: flex-end;
-    transition: all .2s linear;
-}
-
-.page-link {
-    position: relative;
-    display: block;
-    padding: 0.5rem 0.75rem;
-    line-height: 120%;
-    background-color: #212121;
-    border: 1.5px solid #212121;
-    margin: 2px;
-    font-weight: 600;
-    color: #fff;
-    font-size: 18px;
-    transition: all .2s linear;
-    border-radius: 4px;
-}
-
-.page-link:hover,
-.page-item.active .page-link {
-    color: #212121;
-    background-color: #fff;
-    border-color: #212121;
-}
-
-.page-item.disabled .page-link {
-    color: #555;
-    border-color: #555;
-}
-
-
-/***** Pagination *****/
+/******Banner******/
