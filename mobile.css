@@ -1,23 +1,19 @@
 /****Responsivo da página****/
 
 @media screen and (max-width: 992px) {
-    .logo img {
-        height: 30px;
+    .about-me {
+        padding: 70px 0;
     }
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: center;
-        background: #f5f5f5;
-        padding: 10px;
-        border-radius: 8px;
+    .wq-all-imgs {
+        display: none;
     }
-    .nav-item {
-        margin-left: 0px;
-        margin-bottom: 10px;
+    .wq-all-imgs-mobile {
+        display: block;
+        margin-bottom: 50px;
     }
-    .dropdown-toggle {
-        display: flex;
-        justify-content: center;
-        width: 100%;
+    .banner-conteudo h1 {
+        font-size: 35px;
+        line-height: 45px;
     }
 }
 
@@ -34,22 +30,125 @@
 
 /***** Tamanho para tablets na vertical *****/
 
-@media screen and (max-width: 1099px) and (min-width: 769px) {}
+@media screen and (max-width: 1099px) and (min-width: 769px) {
+    .wq-all-imgs figure:nth-child(1) {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        z-index: 5;
+    }
+    .wq-all-imgs figure:nth-child(2) {
+        width: 180px;
+        height: 180px;
+        left: 15px;
+        top: 20px;
+        z-index: 6;
+    }
+    .wq-all-imgs figure:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        bottom: 10px;
+        z-index: 4;
+    }
+    .wq-all-imgs figure:nth-child(4) {
+        width: 220px;
+        height: 220px;
+        right: 50px;
+        bottom: -25px;
+        z-index: 6;
+    }
+    .wq-title-01 h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .wq-title-01 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
 
 
 /***** Tamanho para tablets na horizontal *****/
 
-@media screen and (max-width: 1200px) and (min-width: 1100px) {}
-
-
-/***** Monitores pequenos  *****/
-
-@media screen and (max-width: 1299px) and (min-width: 992px) {}
+@media screen and (max-width: 1200px) and (min-width: 1100px) {
+    .wq-all-imgs figure:nth-child(1) {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        z-index: 5;
+    }
+    .wq-all-imgs figure:nth-child(2) {
+        width: 180px;
+        height: 180px;
+        left: 15px;
+        top: 20px;
+        z-index: 6;
+    }
+    .wq-all-imgs figure:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        bottom: 10px;
+        z-index: 4;
+    }
+    .wq-all-imgs figure:nth-child(4) {
+        width: 220px;
+        height: 220px;
+        right: 50px;
+        bottom: -25px;
+        z-index: 6;
+    }
+    .wq-title-01 h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .wq-title-01 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
 
 
 /***** Monitores medios  *****/
 
-@media screen and (max-width: 1499px) and (min-width: 1300px) {}
+@media screen and (max-width: 1499px) and (min-width: 1300px) {
+    .wq-all-imgs figure:nth-child(1) {
+        width: 360px;
+        height: 360px;
+        position: relative;
+        z-index: 5;
+    }
+    .wq-all-imgs figure:nth-child(2) {
+        width: 180px;
+        height: 180px;
+        left: 15px;
+        top: 20px;
+        z-index: 6;
+    }
+    .wq-all-imgs figure:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        bottom: 10px;
+        z-index: 4;
+    }
+    .wq-all-imgs figure:nth-child(4) {
+        width: 220px;
+        height: 220px;
+        right: 50px;
+        bottom: -25px;
+        z-index: 6;
+    }
+    .wq-title-01 h2 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .wq-title-01 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
 
 
 /***** Monitores extra grandes  *****/

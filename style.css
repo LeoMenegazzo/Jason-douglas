@@ -24,6 +24,10 @@ p {
     max-width: 1700px;
 }
 
+.container {
+    max-width: 1400px;
+}
+
 ::-webkit-scrollbar {
     width: 6px;
     background-color: #cecece;
@@ -155,6 +159,39 @@ header {
 
 
 /******HEADER******/
+
+
+/******wq-title-01******/
+
+.wq-title-01 h3 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 37px;
+    letter-spacing: 0.2em;
+    color: #00FFFF;
+    text-transform: uppercase;
+}
+
+.wq-title-01 h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.wq-title-01 p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+
+/******wq-title-01******/
 
 
 /******Banner******/
@@ -309,5 +346,116 @@ header {
     margin-bottom: 10px;
 }
 
+.banner {
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/blur-header.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 40;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .container-fluid {
+    position: relative;
+    z-index: 60;
+}
+
 
 /******Banner******/
+
+
+/******about-me******/
+
+.about-me {
+    background-color: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.about-me .row {
+    align-items: center;
+}
+
+.wq-all-imgs figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wq-all-imgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 40px;
+}
+
+.wq-all-imgs figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 50%;
+    filter: drop-shadow(19px 19px 58px rgba(0, 4, 107, 0.2));
+}
+
+.wq-all-imgs figure:nth-child(1) {
+    width: 405px;
+    height: 405px;
+    position: relative;
+    z-index: 5;
+}
+
+.wq-all-imgs figure:nth-child(2),
+.wq-all-imgs figure:nth-child(3),
+.wq-all-imgs figure:nth-child(4) {
+    position: absolute;
+}
+
+.wq-all-imgs figure:nth-child(2) {
+    width: 220px;
+    height: 220px;
+    left: 50px;
+    top: 2px;
+    z-index: 6;
+}
+
+.wq-all-imgs figure:nth-child(3) {
+    width: 225px;
+    height: 225px;
+    left: 0;
+    bottom: 45px;
+    z-index: 4;
+}
+
+.wq-all-imgs figure:nth-child(4) {
+    width: 245px;
+    height: 245px;
+    right: 100px;
+    bottom: -50px;
+    z-index: 6;
+}
+
+.wq-all-imgs-mobile {
+    display: none;
+}
+
+.wq-all-imgs-mobile figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/******about-me******/
