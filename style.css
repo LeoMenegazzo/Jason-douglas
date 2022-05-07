@@ -190,7 +190,16 @@ header {
     margin-bottom: 30px;
 }
 
+.wq-title-01.dark h3 {
+    color: #8F00FF;
+}
 
+.wq-title-01.dark h2,
+.wq-title-01.dark p {
+    color: 000121;
+}
+
+.btn-type-02
 /******wq-title-01******/
 
 
@@ -459,3 +468,13 @@ header {
 
 
 /******about-me******/
+
+
+/******ui-design******/
+
+.ui-design {
+    padding: 350px 0;
+}
+
+
+/******ui-design******/
