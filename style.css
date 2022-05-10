@@ -60,6 +60,7 @@ p {
     border: 2px solid transparent;
     transition: all .2s linear;
     padding: 15px 20px;
+    height: 50px;
 }
 
 .btn span {
@@ -98,6 +99,8 @@ p {
     padding: 15px 20px;
     background-color: #fff;
     color: #8F00FF;
+    border: 2px solid #fff;
+    height: 50px;
 }
 
 .btn-whatsapp span {
@@ -107,6 +110,7 @@ p {
 
 .btn-whatsapp:hover {
     background-color: #8F00FF;
+    border-color: #8F00FF;
     color: #fff;
 }
 
@@ -230,7 +234,7 @@ header {
 
 .wq-title-01.dark h2,
 .wq-title-01.dark p {
-    color: #000121;
+    color: #00046B;
 }
 
 .btn-type-02 {
@@ -242,13 +246,25 @@ header {
     display: none;
 }
 
+.line-divider {
+    display: block;
+    margin-top: 130px;
+}
+
+.line-divider img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 /******wq-title-01******/
 
 
 /******Banner******/
 
-.banner {
+.banner,
+.banner-all-pages {
     position: relative;
     padding: 150px 0 65px;
     background-position: center;
@@ -426,6 +442,58 @@ header {
 /******Banner******/
 
 
+/******banner-all-pages******/
+
+.banner-all-pages {
+    padding-bottom: 40px;
+}
+
+.banner-all-pages h1 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    /* identical to box height, or 194% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    color: #00FFFF;
+    margin: 0 10px 10px 0;
+}
+
+.banner-all-pages ol {
+    margin-bottom: 10px;
+}
+
+.banner-all-pages ol li a,
+.banner-all-pages ol li,
+.breadcrumb-item.active {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #fff;
+}
+
+.banner-all-pages .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/******banner-all-pages******/
+
+
 /******about-me******/
 
 .about-me {
@@ -434,6 +502,22 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     padding: 150px 0;
+}
+
+.about-me.light {
+    background-color: #fff;
+}
+
+.about-me.light {
+    padding-bottom: 0px;
+}
+
+.about-me.light .wq-title-01.dark p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1em;
+    color: #00023A;
 }
 
 .about-me .row {
@@ -574,6 +658,13 @@ header {
     background-color: #000121;
 }
 
+.services.light {
+    position: relative;
+    z-index: 77;
+    padding: 125px 0;
+    background-color: #FFF;
+}
+
 .wrapper-services {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -616,6 +707,7 @@ header {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     margin-bottom: 15px;
+    transition: all .2s linear;
 }
 
 .services-item p {
@@ -625,6 +717,21 @@ header {
     letter-spacing: 0.1em;
     color: #FFFFFF;
     margin-bottom: 40px;
+    transition: all .2s linear;
+}
+
+.services.light .services-item:hover {
+    background-color: #00046B;
+}
+
+.services.light .services-item p,
+.services.light .services-item h3 {
+    color: #00046B;
+}
+
+.services.light .services-item:hover p,
+.services.light .services-item:hover h3 {
+    color: #fff;
 }
 
 .services-item em {
@@ -642,6 +749,10 @@ header {
 .services-item em span {
     margin-bottom: 0;
     margin-left: 8px;
+}
+
+.wrapper-type-02 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 
@@ -792,3 +903,308 @@ footer p {
 
 
 /******footer******/
+
+
+/******logos******/
+
+.logos {
+    padding: 120px 0;
+}
+
+.logos .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 60px;
+    margin-top: 80px;
+}
+
+.logos .wrapper figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos .wrapper figure img {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+
+/******logos******/
+
+
+/******service-description******/
+
+.service-description {
+    padding: 80px 0;
+    background-color: #000121;
+}
+
+.content-service-description>ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px!important;
+}
+
+.content-service-description>ul li {
+    margin-right: 20px;
+}
+
+.content-service-description>ul li a img {
+    display: block;
+    height: 55px;
+    width: auto;
+}
+
+.content-service-description>ul li a {
+    display: block;
+    transition: all .2s linear;
+    opacity: 0.1;
+}
+
+.content-service-description>ul li a.active,
+.content-service-description>ul li a:hover {
+    opacity: 1;
+}
+
+.content-service-description h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+}
+
+.content-service-description p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.content-service-description p span {
+    display: block;
+    color: #00FFFF;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btns>a {
+    margin: 5px 15px 5px 0;
+    border-radius: 0;
+}
+
+.form-content {
+    padding: 40px 50px;
+    position: relative;
+    z-index: 77;
+}
+
+.form-detalhe-content {
+    position: relative;
+}
+
+.form-detalhe-content figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+
+.form-detalhe-content figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.teste {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 710px;
+}
+
+
+/******service-description******/
+
+
+/******cases-listagem******/
+
+.cases-listagem {
+    padding: 80px 0;
+    background-color: #000121;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.filter-case {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.filter-case li {
+    margin-left: 15px;
+}
+
+.filter-case li a {
+    transition: all .2s linear;
+}
+
+.filter-case li a:hover {
+    opacity: 0.5;
+}
+
+.filter-case li a img {
+    display: block;
+    height: 46px;
+    width: auto;
+}
+
+.content-titulo .row {
+    align-items: center;
+}
+
+.content-titulo {
+    margin-bottom: 60px;
+}
+
+.case-item {
+    border: .5px solid #43059463;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    transition: all .2s linear;
+}
+
+.case-item:hover {
+    background-color: #8F00FF;
+}
+
+.case-item figure img,
+.case-item figure {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.case-item h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.case-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.case-item em {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.25em;
+    color: #00FFFF;
+    transition: all .2s linear;
+}
+
+.case-item>div {
+    padding: 25px;
+}
+
+.content-service-description div>span {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 37px;
+    letter-spacing: 0.2em;
+    color: #00FFFF;
+    margin-top: 30px;
+}
+
+.btn.btn-type-01.scroll span {
+    margin-right: 10px;
+    margin-left: auto;
+    transform: rotate(90deg);
+}
+
+.apresentation-case {
+    padding: 80px 0;
+    background-color: #000121;
+}
+
+.apresentation-case figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fale-comigo-services {
+    padding-top: 60px;
+}
+
+.service-description {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn.btn-type-01.light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn.btn-type-01.light:hover {
+    color: #000121;
+    background-color: #fff;
+}
+
+
+/******cases-listagem******/
+
+.scroll-top-btn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s linear;
+}
+
+.scroll-top-btn:hover {
+    opacity: .5;
+}
+
+.scroll-top-btn img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

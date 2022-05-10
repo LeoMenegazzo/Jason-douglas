@@ -44,7 +44,8 @@
         padding: 90px 0 65px;
     }
     .banner-conteudo p,
-    .wq-title-01 p {
+    .wq-title-01 p,
+    .about-me.light .wq-title-01.dark p {
         font-size: 16px;
         line-height: 25px;
     }
@@ -114,6 +115,46 @@
     .wrapper-services {
         border: .5px solid #4305949e;
     }
+    .banner-all-pages {
+        padding: 100px 0 30px;
+    }
+    .wq-title-01 h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .line-divider img {
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
+    .line-divider {
+        margin-top: 0px;
+    }
+    .logos {
+        padding: 45px 0;
+    }
+    .about-me.light .row {
+        align-items: baseline!important;
+    }
+    .form-detalhe-content figure {
+        display: none;
+    }
+    .form-content {
+        padding: 0;
+    }
+    .filter-case li a img {
+        height: 25px;
+    }
+    .service-description,
+    .apresentation-case {
+        padding: 50px 0;
+    }
+    .scroll-top-btn {
+        right: 10px;
+        bottom: 10px;
+        height: 25px;
+        width: 25px;
+    }
 }
 
 
@@ -125,6 +166,18 @@
     }
     .row>div {
         margin-bottom: 30px;
+    }
+    .logos .wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        margin-top: 40px;
+    }
+    .filter-case {
+        justify-content: flex-start;
+    }
+    .filter-case li {
+        margin-left: 0px;
+        margin-right: 15px;
     }
 }
 
@@ -138,6 +191,21 @@
     }
     .row>div {
         margin-bottom: 30px;
+    }
+    .logos .wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+        margin-top: 40px;
+    }
+    .about-me {
+        padding: 70px 0;
+    }
+    .filter-case {
+        justify-content: flex-start;
+    }
+    .filter-case li {
+        margin-left: 0px;
+        margin-right: 15px;
     }
 }
 
@@ -211,6 +279,24 @@
         border: none;
         grid-template-columns: 1fr 1fr;
     }
+    .logos .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 35px;
+        margin-top: 40px;
+    }
+    .wq-all-imgs {
+        display: none;
+    }
+    .wq-all-imgs-mobile {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .about-me.light .row {
+        align-items: baseline!important;
+    }
+    .about-me {
+        padding: 70px 0;
+    }
 }
 
 
@@ -272,6 +358,9 @@
     .wq-title-01 p {
         font-size: 16px;
         line-height: 25px;
+    }
+    .about-me {
+        padding: 70px 0;
     }
 }
 
